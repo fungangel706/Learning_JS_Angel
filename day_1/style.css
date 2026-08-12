@@ -1,0 +1,43 @@
+body {
+    font-family: Arial,  sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: lightgrey;
+}
+
+h1 {
+    text-align: center;
+    color: darkblue;
+    font-size: 36px;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+nav a {
+    color: darkblue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
