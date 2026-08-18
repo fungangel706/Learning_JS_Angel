@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: #e0e8ff;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain; 
+}
+
+.card {
+    width: 350px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 15px 30px rgba(red, green, blue, alpha);
+}
+
+.card > img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.content {
+    padding: 30px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.content > p {
+    color: #717fa6;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+ a {
+    color: #382ae1;
+    font-weight: bold;
+}
+
+button {
+    width: 100%;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    background: #382ae1;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.cancel {
+    display: block;
+    text-decoration: none;
+    color: #717fa6;
+    font-weight: bold;
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 90%;
+    }
+}
+
+.plan {
+    background-color: #f7f7f7;
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.plan-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.music-icon {
+    background-color: #e5e5e5;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: fill;
+}
+
+.plan h3 {
+    margin: 0;
+}
+
+.plan p {
+    margin: 4px 0 0;
+}
+
+.plan a {
+    color: #3829e0;
+    font-weight: bold;
+}
+
+.plan a:hover {
+color: #2114a8;
+text-decoration: underline;
+}
+
+.payment-btn {
+    transition: 0.2s ease;
+}
+
+.payment-btn:hover {
+    background-color: #2114a8;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cancel-order {
+    color: #777;
+    transition: 0.2s ease;
+}
+
+.cancel-order:hover {
+    color: #333;
+}
