@@ -89,8 +89,48 @@ button {
 .plan-info {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    background: #eff1f5;
+    padding: 8px;
+    margin-bottom: 8px;
     gap: 12px;
+    border-radius: 12px;
 }
+.plan-info a:hover{
+    text-decoration: none;
+    color: #2114a8;
+}
+.plan-box{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.plan-details{
+    margin-left: 15px;
+    padding: 0;
+    text-align: left;
+    
+}
+.plan-details h3 {
+  font-weight: 700;  
+  margin-bottom: 5px;
+  /* margin-left: 0; */
+  
+
+    
+}
+.plan-details p {
+  /* font-weight: 700;   */
+
+  margin-left: 0;
+  
+  
+
+    
+}
+
 
 .music-icon {
     background-color: #e5e5e5;
@@ -102,7 +142,7 @@ button {
     justify-content: center;
     object-fit: fill;
 }
-
+/* 
 .plan h3 {
     margin: 0;
 }
@@ -119,7 +159,7 @@ button {
 .plan a:hover {
 color: #2114a8;
 text-decoration: underline;
-}
+} */
 
 .payment-btn {
     transition: 0.2s ease;
@@ -130,11 +170,11 @@ text-decoration: underline;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-.cancel-order {
+/* .cancel-order {
     color: #777;
     transition: 0.2s ease;
-}
+} */
 
-.cancel-order:hover {
+.cancel:hover {
     color: #333;
 }
