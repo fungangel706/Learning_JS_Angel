@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="pulseBlog is a calm, modern space for discovering thoughtful stories.">
+	<title>pulseBlog | Stories worth your time</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="site-header">
+		<div class="header-inner">
+			<a class="brand" href="#top" aria-label="pulseBlog home"><span class="brand-mark">p</span><span>pulse<span class="brand-accent">Blog</span></span></a>
+			<nav class="main-nav" aria-label="Main navigation"><a class="active" href="#latest">Latest stories</a><a href="#about">About</a></nav>
+			<button class="subscribe-button" type="button" onclick="document.querySelector('#email').focus()">Subscribe <span aria-hidden="true">&#8594;</span></button>
+		</div>
+	</header>
+
+	<main id="top">
+		<section class="hero" aria-labelledby="hero-title">
+			<div class="hero-copy"><p class="eyebrow"><span class="pulse-dot"></span> Your daily dose of ideas</p><h1 id="hero-title">Small thoughts.<br><em>Big pulse.</em></h1><p class="hero-text">A thoughtful collection of stories, lessons, and curious ideas from around the web.</p></div>
+			<div class="hero-art" aria-hidden="true"><span class="art-ring ring-one"></span><span class="art-ring ring-two"></span><span class="art-line line-one"></span><span class="art-line line-two"></span><span class="art-star">&#10022;</span><span class="art-label">READ<br>CURIOUSLY</span></div>
+		</section>
+
+		<section class="content-section" id="latest" aria-labelledby="latest-title">
+			<div class="section-heading"><div><p class="section-kicker">The collection</p><h2 id="latest-title">Latest stories</h2></div><label class="search-box" for="search-input"><span aria-hidden="true">&#128269;</span><input id="search-input" type="search" placeholder="Search stories..." autocomplete="off"></label></div>
+			<div class="status-message" id="loading-message" role="status"><span class="spinner" aria-hidden="true"></span><span>Gathering fresh stories...</span></div>
+			<div class="status-message error-message" id="error-message" role="alert" hidden><span class="status-icon" aria-hidden="true">!</span><div><strong>We could not load the stories.</strong><p>Check your connection and try again.</p><button id="retry-button" class="retry-button" type="button">Try again</button></div></div>
+			<div class="posts-grid" id="posts-container" aria-live="polite"></div>
+			<p class="empty-message" id="empty-message" hidden>No stories match your search. Try another phrase.</p>
+		</section>
+
+		<section class="newsletter" id="about" aria-labelledby="newsletter-title"><div><p class="section-kicker">Stay in the loop</p><h2 id="newsletter-title">Good ideas, delivered gently.</h2><p>Join readers who like their inbox useful, not noisy.</p></div><form class="signup-form" id="signup-form"><label class="sr-only" for="email">Your email address</label><input id="email" type="email" placeholder="Your email address" required><button type="submit">Join pulseBlog <span aria-hidden="true">&#8594;</span></button></form><p class="signup-success" id="signup-success" hidden>Thanks for joining the pulse.</p></section>
+	</main>
+
+	<footer class="site-footer"><span>&copy; 2024 pulseBlog</span><span>Made for curious minds <span class="footer-pulse">&#9829;</span></span></footer>
+	<script src="script.js"></script>
+</body>
+</html>
